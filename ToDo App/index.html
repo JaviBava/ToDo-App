@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/sweetalert.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>ToDo App.</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<h1>TO DO LIST.</h1>
+				<input type="text" placeholder="Tarea pendiente..." maxlength="55" id="taskInput" onkeyup="validarLongitud(this)" onclick="borrarPlaceholder(this)" />
+                <div id="dialog" style="display: none; background-color: rgb(85, 4, 4); border: 1px solid #ccc; box-shadow: 0px 0px 10px #ccc; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px;">
+                    <p>Has alcanzado el límite de caracteres permitidos para esta entrada.</p>
+                  </div>
+
+                <span
+					class="addBtn" id="addBtn" onclick="ocultarAlerta()">Agregar</span>
+			</div>
+		</div>
+
+		<ul class="todo-list">
+			<!-- <li class="list-group-item">1</li>
+				<li class="checked">2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li> -->
+		</ul>
+
+		<!-- todo -->
+		<!-- <ul class="completedTasks">
+			<li class="list-group-item">1 <span class="badge badge-pill">52</span></li>
+		</ul> -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/sweetalert.min.js"></script>
+		<script src="js/task.js"></script>
+		<script src="js/main.js"></script>
+        
+	</body>
+</html>
